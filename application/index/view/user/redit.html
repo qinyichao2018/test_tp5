@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{:url('user/zhuye')}">主页</a>
+
+<form method="post" action="{:url('user/shuoshuo_edit_do')}">
+
+    <input type="text" name="text" value={$yuanwen} >
+    <input type="hidden" name="id" value={$bianji}>
+    <input type="submit" name="submit" value='更新' >
+
+</form>
+</body>
+</html>

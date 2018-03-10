@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+
+
+    {$Think.now}
+    <li>id:     内容:     时间:</li>
+    {volist name="list" id="vo1"}
+    <li>{$vo1.id}   {$vo1.shuoshuo}    {$vo1.created_at} <input type="hidden" name="id" value="{$vo1.id}" >
+    </li>
+    {/volist}
+</ul>
+</body>
+</html>

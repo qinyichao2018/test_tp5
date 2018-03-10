@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<a href="{:url('user/zhuye')}">主页</a>
+<form method="post" action="{:url('user/user')}">
+    邮箱<input type="email" name="email" {notempty name="post_data"}{notempty name='post_data.email'}value="{$post_data.email}"{/notempty}{/notempty}><br>
+    密码<input type="password" name="password"  {notempty name='post_data.password'}value="{$post_data.password}"{/notempty}><br>
+    <input type="submit" value="提交">
+        <p style="color: red">
+            {$error|default=''}
+        </p>
+
+</form>
+</body>
+</html>
